@@ -1,0 +1,41 @@
+{
+  "name": "tachovendo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "[...]",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-scripts": "2.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thayllachristine/tachovendo.git"
+  },
+  "keywords": [
+    "tachovendo",
+    "reprograma"
+  ],
+  "author": "Thaylla Christine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thayllachristine/tachovendo/issues"
+  },
+  "homepage": "https://github.com/thayllachristine/tachovendo#readme"
+}
