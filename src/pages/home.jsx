@@ -1,22 +1,25 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 
+import Navbar from '../components/navbar/navbar'
 import Container from '../components/container/container'
 import Form from '../components/form/form'
 import weather from '../resource/hgbrasil'
 
+import SunnyDay from './sunnyday'
+import RainyDay from './rainyday'
 
 
-const PStyled = styled.p`
-    margin: 0 auto;
-    font-size: 20px
+const TitleStyled = styled.p`
+    margin: 15px auto;
+    font-size: 25px;
 `
 
-
-// function writing(el) {
-//     const letArr = 
-// }
-
+const PStyled = styled.p`
+    margin: 5px auto;
+    font-size: 20px
+`
 
 
 class Home extends Component {
@@ -31,7 +34,7 @@ class Home extends Component {
 
         const searchInput = this.searchInputRef.current
         const city = searchInput.state.value
-        console.log(city)
+        console.log(city) //
 
         weather(city)
             .then((resp) => {
@@ -39,10 +42,12 @@ class Home extends Component {
                 const condition = forecast.condition
                 console.log(condition)
 
-                if (condition === `storm`) {
+                if (condition === `storm` || condition === `rain`) {
                     //... do somenthing
+                    console.log('vai chover')
                 } else {
                     //... do another thing
+                    console.log('não vai acontecer nada')
                 }
             })
 
@@ -52,39 +57,30 @@ class Home extends Component {
     }
 
 
-
-
-
     render() {
         return (
-            <Container>
-                <PStyled>oi :)</PStyled>
+            <React.Fragment>
+                <Navbar />
+                <Container>
+                    <TitleStyled className='text'>oi :)</TitleStyled>
+                    <PStyled className='text'>quantas vezes você tomou chuva por ter esquecido o guarda-chuva em casa?</PStyled>
+                    <PStyled className='text'>aqui vê se amanhã vai chover para não esquecer de colocar esse item na sua bolsa/mochila!</PStyled>
+                    <PStyled className='text'>é só inserir a sua cidade e clicar em pesquisar:</PStyled>
 
-                <PStyled>
-                    já parou para pensar quantas vezes você tomou chuva por ter esquecido o guarda-chuva em casa?
-                </PStyled>
+                    <Form onSubmit={this.handleSubmit}>
+                        <Form.Label htmlFor='searchInput'>
+                            <Form.Input
+                                id='searchInput'
+                                type='text'
+                                placeholder='digite..'
+                                ref={this.searchInputRef}
+                            />
 
-                <PStyled>
-                    no 'Tá Chovendo?' você vê se amanhã vai chover para não esquecer de colocar esse item na sua bolsa/mochila!
-                </PStyled>
-
-                <PStyled>
-                    para isso, é só inserir a sua cidade e clicar em pesquisar:
-                </PStyled>
-
-
-                <Form onSubmit={this.handleSubmit}>
-                    <Form.Label htmlFor='searchInput'>
-                        <Form.Input
-                            id='searchInput'
-                            type='text'
-                            placeholder='digite..'
-                            ref={this.searchInputRef}
-                        />
-                    </Form.Label>
-                    <Form.Button>A</Form.Button>
-                </Form>
-            </Container>
+                        </Form.Label>
+                        <Form.Button />
+                    </Form>
+                </Container>
+            </React.Fragment>
         )
     }
 }
