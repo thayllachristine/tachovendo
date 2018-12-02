@@ -7,6 +7,8 @@ import Button from './button/button'
 
 
 const FormStyled = styled.form`
+    margin-top: 10px;
+    
     display: flex;
     justify-content: center;
 `
