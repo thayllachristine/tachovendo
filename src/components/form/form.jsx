@@ -19,7 +19,7 @@ class Form extends Component {
 
     render() {
         return (
-            <FormStyled className='searchForm' onSubmit={this.onSubmit}>
+            <FormStyled className='searchForm' onSubmit={this.props.onSubmit}>
                 {this.props.children}
             </FormStyled>
         )
