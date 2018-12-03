@@ -1,17 +1,9 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+import FormSt from './form.styled'
 
 import Label from './label/label'
 import Input from './input/input'
 import Button from './button/button'
-
-
-const FormStyled = styled.form`
-    margin-top: 10px;
-    
-    display: flex;
-    justify-content: center;
-`
 
 
 class Form extends Component {
@@ -21,9 +13,9 @@ class Form extends Component {
 
     render() {
         return (
-            <FormStyled className='searchForm' onSubmit={this.props.onSubmit}>
+            <FormSt className='searchForm' onSubmit={this.props.onSubmit}>
                 {this.props.children}
-            </FormStyled>
+            </FormSt>
         )
     }
 }
