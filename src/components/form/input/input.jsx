@@ -1,17 +1,5 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
-
-
-const InputStyled = styled.input`
-    width: 350px;
-    height: 50px;
-    border: 1px solid #fff;
-    border-radius: 10px
-    
-    ::placeholder {
-        color: gray;
-    }
-`
+import InputSt from './input.styled'
 
 
 export default class Input extends Component {
@@ -32,7 +20,7 @@ export default class Input extends Component {
     render() {
         return (
             <React.Fragment>
-                <InputStyled
+                <InputSt
                     type={this.props.type}
                     id={this.props.id}
                     className='searchInput'
