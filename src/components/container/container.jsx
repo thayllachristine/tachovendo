@@ -1,17 +1,5 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
-
-
-const ContainerStyled = styled.div`
-    width: 900px;
-    height: 500px;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-`
-
+import ContainerStyled from './container.styled'
 
 export default class Container extends Component {
     render() {
