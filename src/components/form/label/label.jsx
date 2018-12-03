@@ -1,11 +1,5 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
-
-
-const LabelStyled = styled.label`
-    margin-right: 5px;
-`   
-
+import LabelSt from './label.styled'
 
 export default class Label extends Component {
     constructor(props) {
@@ -14,9 +8,9 @@ export default class Label extends Component {
 
     render() {
         return (
-            <LabelStyled htmlFor={this.props.htmlFor} >
+            <LabelSt htmlFor={this.props.htmlFor} >
                 {this.props.children}
-            </LabelStyled>
+            </LabelSt>
         )
     }
 }
