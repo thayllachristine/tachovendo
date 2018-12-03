@@ -1,31 +1,16 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+import NavStyled from './navbar.styled'
 
-import tachovendo from './logo.svg'
-
-const NavStyled = styled.nav`
-    border-bottom: 1px solid lightgray;
-
-    display: flex;
-    justify-content: space-between;
-`
-
-const LogoStyled = styled.img`
-    width: 100px;
-
-`
-
+import Button from '../form/button/button'
 
 export default class Navbar extends Component {
     render() {
         return (
             <NavStyled>
-                <div>
-                    <LogoStyled src={tachovendo} alt="" />
-                </div>
-                <div></div>
+                <Button>
+                    <i class="material-icons">keyboard_backspace</i>
+                </Button>
             </NavStyled>
-
         )
     }
 }
