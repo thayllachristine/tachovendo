@@ -3,13 +3,12 @@ import styled from 'styled-components'
 
 
 const InputStyled = styled.input`
-    width: 500px;
+    width: 350px;
     height: 50px;
-    border: 1px solid lightgray;
+    border: 1px solid #fff;
     border-radius: 10px
     
     ::placeholder {
-        
         color: gray;
     }
 `
