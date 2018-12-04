@@ -1,19 +1,17 @@
 import React, { Component } from 'react'
-
+import { getLocalStorage } from '../../network/localStorage'
 import Navbar from '../../components/navbar/navbar'
 import Footer from '../../components/footer/footer'
-
-import { GridRow, Grid3Col, PSt, SunImg, TreeImg } from './sunnyday.styled'
 import './sunnyday.scss'
-
-import tree from './vectors/tree.svg'
+import { GridRow, Grid3Col, PSt, SunImg, TreeImg } from './sunnyday.styled'
 import sun from './vectors/sun.svg'
+import tree from './vectors/tree.svg'
 
 
 class SunnyDay extends Component {
     render() {
         return (
-            <React.Fragment>
+            <div className="bg-sunny">
                 <Navbar />
                 <GridRow>
                     <Grid3Col>
@@ -21,7 +19,7 @@ class SunnyDay extends Component {
                     </Grid3Col>
 
                     <Grid3Col>
-                        <PSt> em _____________, não vai chover! </PSt>
+                        <PSt> em {getLocalStorage(`city`)}, não vai chover! </PSt>
                         <PSt> aproveite seu dia! </PSt>
                     </Grid3Col>
 
@@ -30,7 +28,7 @@ class SunnyDay extends Component {
                     </Grid3Col>
                 </GridRow>
                 <Footer />
-            </React.Fragment>
+            </div>
         )
     }
 }
