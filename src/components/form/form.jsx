@@ -7,10 +7,6 @@ import Button from './button/button'
 
 
 class Form extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <FormSt className='searchForm' onSubmit={this.props.onSubmit}>
