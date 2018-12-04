@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import { removeLocalStorage } from '../../network/localStorage'
-import NavStyled from './navbar.styled'
 import Button from '../form/button/button'
+import NavStyled from './navbar.styled'
 
 class Navbar extends Component {
 
