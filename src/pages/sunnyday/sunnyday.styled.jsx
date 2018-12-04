@@ -23,8 +23,6 @@ export const TreeImg = styled.img`
     position: absolute;
     top: 37.5%;
     left: 5%;
-    
-    z-index: -1;
 `
 
 export const SunImg = styled.img`
