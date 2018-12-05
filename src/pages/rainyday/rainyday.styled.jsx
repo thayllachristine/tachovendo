@@ -7,7 +7,7 @@ export const PSt = styled.p`
 `
 
 export const GridRow = styled.div`
-    height: 260px;
+    height: 284.5px;
     display: flex;
 `
 

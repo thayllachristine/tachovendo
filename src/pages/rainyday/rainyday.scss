@@ -1,3 +1,26 @@
 .bg-rainy {
     background-color: rgba(91, 97, 138, 0.7);
 }
+
+.rain-effect {
+    height: 600px;
+    background: url('./vectors/raindrops.png');
+    animation: rain .25s linear infinite;
+}
+
+.rain-effect::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+@keyframes rain {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 20% 0;
+    }
+}
