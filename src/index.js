@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
+import { BrowserRouter } from 'react-router-dom'
+import App from './App'
 import './index.scss'
-import Home from './pages/home'
-import SunnyDay from './pages/sunnyday';
-import RainyDay from './pages/rainyday';
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+
+    , document.getElementById('root'));
