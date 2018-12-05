@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { setLocalStorage } from '../../network/localStorage'
 import weather from '../../resource/hgbrasil'
+import Navbar from '../../components/navbar/home/navbar'
 import Form from '../../components/form/form'
-// import Footer from '../../components/footer/footer'
-import { NavHome, PNav, TitleSt, PSt, Grid1stHalfCol, Grid2ndHalfCol, GridRow, Ellipse, FooterHome, FooterHomeP } from './home.styled'
+import Footer from '../../components/footer/others/footer'
+import { TitleSt, PSt, Grid1stHalfCol, Grid2ndHalfCol, GridRow, Ellipse } from './home.styled'
 import girl from './vectors/girl.svg'
 
 
@@ -45,9 +46,7 @@ class Home extends Component {
     render() {
         return (
             <React.Fragment>
-                <NavHome>
-                    <PNav>tá chovendo?</PNav>
-                </NavHome>
+                <Navbar/>
                 <GridRow>
                     <Grid1stHalfCol>
                         <img src={girl} alt='Menina de cabelo azul sorrindo, pulando e segurando um guarda chuva com a mão direita' />
@@ -76,11 +75,7 @@ class Home extends Component {
                         <Ellipse />
                     </Grid2ndHalfCol>
                 </GridRow>
-                <FooterHome>
-                    <FooterHomeP>
-                        Copyright 2018. Feito por Thaylla Christine
-                    </FooterHomeP>
-                </FooterHome>
+                <Footer/>
             </React.Fragment >
         )
     }
