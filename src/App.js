@@ -8,7 +8,7 @@ import RainyDay from './pages/rainyday/rainyday'
 const App = () => (
     <React.Fragment>
         <Switch>
-            <Route exact path='/home' component={Home} />
+            <Route exact path='/' component={Home} />
             <Route path='/sunnyday' component={SunnyDay} />
             <Route path='/rainyday' component={RainyDay} />
         </Switch>
