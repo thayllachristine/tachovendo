@@ -6,7 +6,7 @@ export default class Footer extends Component {
         return (
             <FooterSt>
                 <PhSt>
-                    Copyright 2018 - Desenvolvido por Thaylla Christine
+                    Copyright 2018. Feito por Thaylla Christine
                 </PhSt>
             </FooterSt>
         )
