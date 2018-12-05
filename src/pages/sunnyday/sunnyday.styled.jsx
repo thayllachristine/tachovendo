@@ -10,7 +10,7 @@ export const GridRow = styled.div`
 
 export const Grid3Col = styled.div`
     width: 33.3%;
-    height: 520px;
+    height: 570px;
 
     display:flex;
     justify-content:center;
