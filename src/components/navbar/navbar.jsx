@@ -6,16 +6,16 @@ import NavStyled from './navbar.styled'
 
 class Navbar extends Component {
 
-    handleClick = (event) => {
-        event.preventDefault();
+    handleClick = (ev) => {
+        ev.preventDefault();
         removeLocalStorage('city')
-        this.props.history.push('/home')
+        this.props.history.push('/')
     }
 
     render() {
         return (
             <NavStyled>
-                <a href='/home' onClick={this.handleClick}>
+                <a href='/' onClick={this.handleClick}>
                     <Button>
                         <i className="material-icons">keyboard_backspace</i>
                     </Button>
