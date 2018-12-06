@@ -14,4 +14,5 @@ export const PNav = styled.p`
     font-family: 'Sacramento', cursive;
     font-size: 30px;
     text-shadow: 2.5px 2.5px 1px #CCC;
+    color: #6d6d6d;
 `
