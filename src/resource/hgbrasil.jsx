@@ -1,4 +1,5 @@
 import axios from 'axios'
+import key from './CREDENTIAL_KEY';
 
 export default function weather(city) {
     return new Promise((resolve, reject) => {
