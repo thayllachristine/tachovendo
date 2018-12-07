@@ -31,18 +31,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thayllachristine/tachovendo.git"
-  },
   "keywords": [
     "tachovendo",
     "reprograma"
-  ],
-  "author": "Thaylla Christine",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/thayllachristine/tachovendo/issues"
-  },
-  "homepage": "https://github.com/thayllachristine/tachovendo#readme"
+  ]
 }
