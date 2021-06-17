@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const InputSt = styled.input`
     border: 1.5px solid #80808099;
@@ -42,6 +42,6 @@ const InputSt = styled.input`
             font-size: 12px;
         }
     }
-`
+`;
 
-export default InputSt
+export default InputSt;
