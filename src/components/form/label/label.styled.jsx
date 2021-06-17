@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const LabelSt = styled.label`
-    margin-right: 5px;
-`   
+  margin-right: 5px;
+`;
 
-export default LabelSt
+export default LabelSt;

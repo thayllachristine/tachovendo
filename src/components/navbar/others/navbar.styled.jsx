@@ -1,17 +1,15 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const NavStyled = styled.nav`
-    // border-bottom: 1px solid lightgray;
+  // border-bottom: 1px solid lightgray;
 
-    background-color: transparent;
-    // width: 100%;
-    height: 50px;
+  background-color: transparent;
+  // width: 100%;
+  height: 50px;
 
-    position: absolute;
+  position: absolute;
 
-    padding: 20px;
+  padding: 20px;
+`;
 
-    
-`
-
-export default NavStyled
+export default NavStyled;
