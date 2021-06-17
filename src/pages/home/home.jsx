@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { setLocalStorage } from '../../network/localStorage';
 import weather from '../../resource/hgbrasil';
 import Navbar from '../../components/Navbar/home/navbar';
 import Form from '../../components/form/form';
@@ -28,7 +27,7 @@ class Home extends Component {
     const city = searchInput.state.value;
     //console.log(city)
 
-    setLocalStorage(`city`, city);
+    localStorage.setItem(`city`, city);
 
     weather(city)
       .then((resp) => {
