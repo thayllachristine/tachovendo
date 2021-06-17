@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 const Navbar = styled.nav`
-  padding: 24px 16px;
-  position: absolute;
+  padding: 16px;
 `;
 
 const Link = styled.a`
