@@ -3,7 +3,7 @@ import { withRouter } from 'react-router';
 import { Switch, Route } from 'react-router-dom';
 import Home from './pages/home/home';
 import SunnyDay from './pages/sunnyday/sunnyday';
-import RainyDay from './pages/rainyday/rainyday';
+import RainyDay from './pages/RainyDay';
 
 const App = () => (
   <React.Fragment>

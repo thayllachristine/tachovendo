@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { setLocalStorage } from '../../network/localStorage';
 import weather from '../../resource/hgbrasil';
-import Navbar from '../../components/navbar/home/navbar';
+import Navbar from '../../components/Navbar/home/navbar';
 import Form from '../../components/form/form';
 import Footer from '../../components/Footer/home/footer';
 import {
