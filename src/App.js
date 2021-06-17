@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import { Switch, Route } from 'react-router-dom';
 import Home from './pages/home/home';
-import SunnyDay from './pages/sunnyday/sunnyday';
+import SunnyDay from './pages/SunnyDay';
 import RainyDay from './pages/RainyDay';
 
 const App = () => (
