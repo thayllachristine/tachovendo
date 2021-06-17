@@ -1,12 +1,13 @@
 import React from 'react';
+
 import Navbar from '../../components/Navbar';
+import Content from '../../components/Content';
+import Text from '../../components/Text';
 import Footer from '../../components/Footer';
 
 import {
   // BackgroundEffect,
   BackgroundColor,
-  Content,
-  Text,
 } from './RainyDay.styled';
 import './animation.scss';
 

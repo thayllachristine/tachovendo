@@ -15,19 +15,6 @@ const BackgroundEffect = styled.div`
   height: 100vh;
 `;
 
-const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 93.5vh;
-`;
-
-const Text = styled.div`
-  color: #ffffff;
-  font-size: 24px;
-  padding: 136px 24px;
-`;
-
 const Image = styled.img``;
 
-export { BackgroundColor, BackgroundEffect, Content, Text, Image };
+export { BackgroundColor, BackgroundEffect, Image };
