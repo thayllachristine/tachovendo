@@ -13,4 +13,13 @@ const Icon = styled.i`
   font-size: 36px;
 `;
 
-export { Navbar, Link, Icon };
+const Text = styled.p`
+  @import url('https://fonts.googleapis.com/css?family=Sacramento');
+  color: #6d6d6d;
+  font-family: 'Sacramento', cursive;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 2.5px 2.5px 1px #ccc;
+`;
+
+export { Navbar, Link, Icon, Text };
