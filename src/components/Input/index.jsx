@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import InputSt from './input.styled';
+import * as S from './Input.styled';
 
 export default class Input extends Component {
   constructor(props) {
@@ -11,13 +11,12 @@ export default class Input extends Component {
 
   handleChange(ev) {
     this.setState({ value: ev.target.value });
-    // const city = this.state.value
   }
 
   render() {
     return (
       <React.Fragment>
-        <InputSt
+        <S.Input
           type={this.props.type}
           id={this.props.id}
           className="searchInput"
