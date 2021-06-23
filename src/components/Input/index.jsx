@@ -1,30 +1,21 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import * as S from './Input.styled';
 
-export default class Input extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: ``,
-    };
-  }
+const Input = ({ type, id, placeholder }) => {
+  const [value, setValue] = useState('');
 
-  handleChange(ev) {
-    this.setState({ value: ev.target.value });
-  }
+  const handleChange = (e) => setValue({ value: e.target.value });
 
-  render() {
-    return (
-      <React.Fragment>
-        <S.Input
-          type={this.props.type}
-          id={this.props.id}
-          className="searchInput"
-          placeholder={this.props.placeholder}
-          value={this.state.value}
-          onChange={this.handleChange}
-        />
-      </React.Fragment>
-    );
-  }
-}
+  return (
+    <S.Input
+      type={type}
+      id={id}
+      className="searchInput"
+      placeholder={placeholder}
+      value={value}
+      onChange={handleChange}
+    />
+  );
+};
+
+export default Input;
