@@ -1,0 +1,15 @@
+.BackgroundEffect {
+  height: 100vh;
+  background: url('./../../assets/raindrops.png');
+  animation: rain 0.25s linear infinite;
+}
+
+@keyframes rain {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 10% 0;
+  }
+}
