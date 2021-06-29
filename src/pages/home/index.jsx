@@ -12,7 +12,7 @@ import girl from './../../assets/girl.svg';
 
 const Home = () => {
   const searchInputRef = React.createRef();
-  let history = useHistory();
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
