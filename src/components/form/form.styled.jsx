@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
-const FormSt = styled.form`
-  margin-top: 10px;
-
+const Form = styled.form`
+  align-items: center;
   display: flex;
-  justify-content: center;
+  padding-top: 24px;
 `;
 
-export default FormSt;
+export { Form };
