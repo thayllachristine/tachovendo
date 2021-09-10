@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory, withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import * as S from './Navbar.styled';
 
 const Navbar = ({ internal }) => {
@@ -23,4 +23,4 @@ const Navbar = ({ internal }) => {
   );
 };
 
-export default withRouter(Navbar);
+export default Navbar;
